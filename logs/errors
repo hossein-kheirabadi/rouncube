@@ -1,0 +1,61 @@
+[15-Feb-2017 10:06:36 +0100]: <7lfvpku3> DB Error: [1146] Table 'roundcubedb.calendars' doesn't exist (SQL Query: SELECT *, calendar_id AS id FROM calendars
+         WHERE user_id='1'
+         ORDER BY name) in C:\xampp\htdocs\roundcubemail-1.2.3\program\lib\Roundcube\rcube_db.php on line 539 (POST /roundcubemail-1.2.3/?_task=calendar&_action=refresh)
+[15-Feb-2017 10:06:36 +0100]: <7lfvpku3> DB Error: [1146] Table 'roundcubedb.calendars' doesn't exist (SQL Query: INSERT INTO calendars
+       (user_id, name, color, showalarms)
+       VALUES ('1', 'Default', 'cc0000', '1')) in C:\xampp\htdocs\roundcubemail-1.2.3\program\lib\Roundcube\rcube_db.php on line 539 (POST /roundcubemail-1.2.3/?_task=calendar&_action=refresh)
+[15-Feb-2017 10:07:13 +0100]: <7lfvpku3> DB Error: [1146] Table 'roundcubedb.calendars' doesn't exist (SQL Query: SELECT *, calendar_id AS id FROM calendars
+         WHERE user_id='1'
+         ORDER BY name) in C:\xampp\htdocs\roundcubemail-1.2.3\program\lib\Roundcube\rcube_db.php on line 539 (POST /roundcubemail-1.2.3/?_task=calendar&_action=event)
+[15-Feb-2017 10:07:36 +0100]: <7lfvpku3> DB Error: [1146] Table 'roundcubedb.calendars' doesn't exist (SQL Query: SELECT *, calendar_id AS id FROM calendars
+         WHERE user_id='1'
+         ORDER BY name) in C:\xampp\htdocs\roundcubemail-1.2.3\program\lib\Roundcube\rcube_db.php on line 539 (POST /roundcubemail-1.2.3/?_task=calendar&_action=refresh)
+[15-Feb-2017 10:07:36 +0100]: <7lfvpku3> DB Error: [1146] Table 'roundcubedb.calendars' doesn't exist (SQL Query: INSERT INTO calendars
+       (user_id, name, color, showalarms)
+       VALUES ('1', 'Default', 'cc0000', '1')) in C:\xampp\htdocs\roundcubemail-1.2.3\program\lib\Roundcube\rcube_db.php on line 539 (POST /roundcubemail-1.2.3/?_task=calendar&_action=refresh)
+[15-Feb-2017 10:08:36 +0100]: <7lfvpku3> DB Error: [1146] Table 'roundcubedb.calendars' doesn't exist (SQL Query: SELECT *, calendar_id AS id FROM calendars
+         WHERE user_id='1'
+         ORDER BY name) in C:\xampp\htdocs\roundcubemail-1.2.3\program\lib\Roundcube\rcube_db.php on line 539 (POST /roundcubemail-1.2.3/?_task=calendar&_action=refresh)
+[15-Feb-2017 10:08:36 +0100]: <7lfvpku3> DB Error: [1146] Table 'roundcubedb.calendars' doesn't exist (SQL Query: INSERT INTO calendars
+       (user_id, name, color, showalarms)
+       VALUES ('1', 'Default', 'cc0000', '1')) in C:\xampp\htdocs\roundcubemail-1.2.3\program\lib\Roundcube\rcube_db.php on line 539 (POST /roundcubemail-1.2.3/?_task=calendar&_action=refresh)
+[15-Feb-2017 10:09:36 +0100]: <7lfvpku3> DB Error: [1146] Table 'roundcubedb.calendars' doesn't exist (SQL Query: SELECT *, calendar_id AS id FROM calendars
+         WHERE user_id='1'
+         ORDER BY name) in C:\xampp\htdocs\roundcubemail-1.2.3\program\lib\Roundcube\rcube_db.php on line 539 (POST /roundcubemail-1.2.3/?_task=calendar&_action=refresh)
+[15-Feb-2017 10:09:36 +0100]: <7lfvpku3> DB Error: [1146] Table 'roundcubedb.calendars' doesn't exist (SQL Query: INSERT INTO calendars
+       (user_id, name, color, showalarms)
+       VALUES ('1', 'Default', 'cc0000', '1')) in C:\xampp\htdocs\roundcubemail-1.2.3\program\lib\Roundcube\rcube_db.php on line 539 (POST /roundcubemail-1.2.3/?_task=calendar&_action=refresh)
+[15-Feb-2017 10:10:36 +0100]: <7lfvpku3> DB Error: [1146] Table 'roundcubedb.calendars' doesn't exist (SQL Query: SELECT *, calendar_id AS id FROM calendars
+         WHERE user_id='1'
+         ORDER BY name) in C:\xampp\htdocs\roundcubemail-1.2.3\program\lib\Roundcube\rcube_db.php on line 539 (POST /roundcubemail-1.2.3/?_task=calendar&_action=refresh)
+[15-Feb-2017 10:10:36 +0100]: <7lfvpku3> DB Error: [1146] Table 'roundcubedb.calendars' doesn't exist (SQL Query: INSERT INTO calendars
+       (user_id, name, color, showalarms)
+       VALUES ('1', 'Default', 'cc0000', '1')) in C:\xampp\htdocs\roundcubemail-1.2.3\program\lib\Roundcube\rcube_db.php on line 539 (POST /roundcubemail-1.2.3/?_task=calendar&_action=refresh)
+[16-Feb-2017 08:43:05 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (hossein) at position 0 (h): The timezone could not be found in the database' in C:\xampp\htdocs\roundcubemail-1.2.3\plugins\calendar\calendar.php:1924
+Stack trace:
+#0 C:\xampp\htdocs\roundcubemail-1.2.3\plugins\calendar\calendar.php(1924): DateTime->__construct('hossein', Object(DateTimeZone))
+#1 C:\xampp\htdocs\roundcubemail-1.2.3\plugins\calendar\calendar.php(857): calendar->write_preprocess(Array, 'new')
+#2 [internal function]: calendar->event_action()
+#3 C:\xampp\htdocs\roundcubemail-1.2.3\program\lib\Roundcube\rcube_plugin_api.php(491): call_user_func(Array)
+#4 C:\xampp\htdocs\roundcubemail-1.2.3\index.php(283): rcube_plugin_api->exec_action('calendar.event')
+#5 {main}
+  thrown in C:\xampp\htdocs\roundcubemail-1.2.3\plugins\calendar\calendar.php on line 1924
+[17-Feb-2017 13:57:49 +0100]: <mm39qut3> DB Error: SQLSTATE[HY000] [1049] Unknown database 'roundcubedb' in C:\xampp\htdocs\mai\roundcubemail-1.2.3\program\lib\Roundcube\rcube_db.php on line 173 (GET /mai/roundcubemail-1.2.3/)
+[17-Feb-2017 13:57:49 +0100]: <mm39qut3> DB Error: SQLSTATE[HY000] [1049] Unknown database 'roundcubedb' (GET /mai/roundcubemail-1.2.3/)
+[17-Feb-2017 15:17:43 +0100]: <mm39qut3> DB Error: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\mai\roundcubemail-1.2.3\program\lib\Roundcube\rcube_db.php on line 173 (GET /mai/roundcubemail-1.2.3/?_task=calendar)
+[17-Feb-2017 15:17:52 +0100]: <mm39qut3> DB Error: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ (GET /mai/roundcubemail-1.2.3/?_task=calendar)
+[18-Feb-2017 12:41:52 +0100]: <dfhu37to> Warning: Call to deprecated function Q(); See bc.inc for replacement
+[18-Feb-2017 12:41:58 +0100]: <dfhu37to> Warning: Call to deprecated function Q(); See bc.inc for replacement
+[15-Jan-2019 10:13:52 +0100]: <heuiqehl> DB Error: SQLSTATE[HY000] [1049] Unknown database 'roundcubedb' in C:\xamppphp56\htdocs\roundcubemail-1.2.3\program\lib\Roundcube\rcube_db.php on line 173 (GET /roundcubemail-1.2.3/)
+[15-Jan-2019 10:13:52 +0100]: <heuiqehl> DB Error: SQLSTATE[HY000] [1049] Unknown database 'roundcubedb' (GET /roundcubemail-1.2.3/)
+[15-Jan-2019 10:17:57 +0100]: <heuiqehl> IMAP Error: Login failed for admin from ::1. AUTHENTICATE PLAIN: Invalid credentials (Failure) in C:\xamppphp56\htdocs\roundcubemail-1.2.3\program\lib\Roundcube\rcube_imap.php on line 193 (POST /roundcubemail-1.2.3/?_task=login&_action=login)
+[15-Jan-2019 10:17:58 Europe/Berlin] PHP Fatal error:  Undefined class constant 'ERROR_RATE_LIMIT' in C:\xamppphp56\htdocs\roundcubemail-1.2.3\index.php on line 158
+[15-Jan-2019 10:18:03 Europe/Berlin] PHP Fatal error:  Undefined class constant 'ERROR_RATE_LIMIT' in C:\xamppphp56\htdocs\roundcubemail-1.2.3\index.php on line 158
+[15-Jan-2019 10:47:28 +0100]: <5hapq5nj> PHP Error: Failed to load plugin file C:/xamppphp56/htdocs/roundcubemail-1.2.3/plugins/calendar/calendar.php in C:\xamppphp56\htdocs\roundcubemail-1.2.3\program\lib\Roundcube\rcube_plugin_api.php on line 173 (POST /roundcubemail-1.2.3/?_task=calendar&_action=refresh)
+[15-Jan-2019 10:49:14 +0100]: <5hapq5nj> Warning: Call to deprecated function Q(); See bc.inc for replacement
+[15-Jan-2019 10:49:35 +0100]: <5hapq5nj> Warning: Call to deprecated function Q(); See bc.inc for replacement
+[15-Jan-2019 10:49:45 +0100]: <5hapq5nj> Warning: Call to deprecated function Q(); See bc.inc for replacement
+[15-Jan-2019 10:49:56 +0100]: <5hapq5nj> Warning: Call to deprecated function Q(); See bc.inc for replacement
+[15-Jan-2019 10:52:08 +0100]: <5hapq5nj> Warning: Call to deprecated function Q(); See bc.inc for replacement
